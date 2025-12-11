@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Diane Cruz</h1>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <div class="hamburger" id="hamburger">☰</div>
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>DIANE CRUZ</span></h1>
+            <h4>STUDENT DEVELOPER |
+                UI/UX DESIGNER</span></h4>
+            
+            
+            <p>A 4th-year student pursuing a Bachelor of Science in Information Technology at Universidad de Dagupan with a strong passion for UI/UX design and web development. 
+            I create clean and thoughtful interfaces that turn ideas into seamless digital experiences. 
+            As I continue learning and exploring new technologies, I aim to design products that are not only beautiful but also truly helpful to users.</p>          
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+        
+        <div class="hero-image">
+            <img src="src/profile.jpg" alt="Profile Photo" class="circle-image">
+        </div>
+        
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="about fade-in-element" id="about" class="about">
+        <div class="about-container">
+          <img src="src/profile2.jpg" alt="About Me Image">
+          <div class="about-text">
+            <h2>ABOUT ME</h2>
+            <p>
+                I am a 21-year-old IT student from Pangasinan with a strong passion for web design and digital content creation. I enjoy designing unique web profiles and exploring creative layouts that are both visually appealing and user-friendly. Alongside web design, I am skilled in editing photos and videos to enhance digital projects. I am eager to learn new technologies and develop my own applications in the future. My goal is to combine creativity and technical skills to build innovative, practical digital solutions and creative digital projects!
+            </p>
+            <!-- Add the button here -->
+            <a href="src\cv.pdf" download class="btn cv-btn">Download CV</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </section>
+    <!-- ================= SKILLS SECTION ================= -->
+    <section id="skills" class="skills">
+        <h2>MY TECHSTACK</h2>
+    
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="src/figma.png" alt="UI/UX Logo" class="skill-logo">
+                <h3>UI/UX Design</h3>
+                <p>Creating intuitive, user-friendly, and visually appealing interfaces.</p>
+            </div>
+            <div class="skill-item">
+                <img src="src/html.png" alt="HTML Logo" class="skill-logo">
+                <h3>HTML5</h3>
+                <p>Creating structured and semantic web page layouts.</p>
+            </div>
+            <div class="skill-item">
+                <img src="src/css.png" alt="CSS Logo" class="skill-logo">
+                <h3>CSS</h3>
+                <p>Designing responsive layouts and adding styles/animations.</p>
+            </div>
+            <div class="skill-item">
+                <img src="src/js.png" alt="JavaScript Logo" class="skill-logo">
+                <h3>JavaScript</h3>
+                <p>Adding interactivity and dynamic functionality to websites.</p>
+            </div>
+            <div class="skill-item">
+                <img src="src/laravel.png" alt="Laravel Logo" class="skill-logo">
+                <h3>Laravel</h3>
+                <p>Building backend applications with MVC architecture in PHP.</p>
+            </div>
+            <div class="skill-item">
+                <img src="src/reactnative.png" alt="React Native Logo" class="skill-logo">
+                <h3>React Native</h3>
+                <p>Developing cross-platform mobile apps with React framework.</p>
+            </div>
+            <div class="skill-item">
+                <img src="src/mariadb.png" alt="MariaDB Logo" class="skill-logo">
+                <h3>MariaDB</h3>
+                <p>Managing databases and writing efficient SQL queries.</p>
+            </div>
+            <div class="skill-item">
+                <img src="src/php.png" alt="PHP Logo" class="skill-logo">
+                <h3>PHP</h3>
+                <p>Writing server-side scripts for dynamic web applications.</p>
+            </div>
+            <div class="skill-item">
+                <img src="src/mysql.png" alt="MySQL Logo" class="skill-logo">
+                <h3>MySQL</h3>
+                <p>Designing relational databases and managing data effectively.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section id="projects" class="projects">
+        <h2>PROJECTS</h2>
+
+        <div class="project-grid">
+
+            <article class="project-card">
+                <img src="src\mms.jpg" alt="Project Image">
+                <h3>Monitoring Management System</h3>
+                <p>
+                    An online monitoring system for ATI-RTC 1 that allows employees to monitor their current stock of supplies and equipments. This system also generates reports they need for monthly and annual inventory reports.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="src\unihub.png" alt="Project Image">
+                <h3>UNIHUB</h3>
+                <p>An online marketplace of merch for students that are enrolled in Universidad de Dagupan. Every students can pre order items they like and track it using the app</p>
+            </article>
+
+            <article class="project-card">
+                <img src="src\jms.png" alt="Project Image">
+                <h3>Job Management System</h3>
+                <p>This system allows applicants to apply for jobs that has available positions. This makes job hunting more convenient and hassle-free</p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="contact">
+        <h2>Contact Me Now!</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="socials">
+            <a href="https://github.com/deykira" target="_blank">GitHub</a>
+            <a href="www.linkedin.com/in/diane-cruz-a8989737a" target="_blank">Linked in</a>
+            <a href="https://www.instagram.com/kan.eira/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/deiyskiecruz" target="_blank">Facebook</a>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2025 Diane Cruz | All Rights Reserved</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.onclick = () => {
+            navLinks.classList.toggle("mobile-open");
+        };
+    </script>
+
+    <script>
+const faders = document.querySelectorAll('.fade-in-element');
+
+const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+    });
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
+</script>
+
+</body>
+</html>

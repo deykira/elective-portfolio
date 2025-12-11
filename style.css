@@ -1,0 +1,411 @@
+/* ================= ROOT VARIABLES ================= */
+:root {  
+    --primary: #1a73e8;
+    --dark: #121212;
+    --light: #ffffff;
+    --gray: #ffffff;
+}
+
+/* ================= GLOBAL STYLES ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+    font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--light);
+    line-height: 1.6;
+    min-height: 200vh;
+    overflow-x: hidden;
+
+    /* FULL PAGE BACKGROUND */
+    background: linear-gradient(120deg, #8A0000, #000000 70%, #CF3F12 100%);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Make all sections transparent */
+section, .hero, .contact, .about, .projects, .skills {
+    background: transparent !important;
+}
+
+/* ================= NAVIGATION ================= */
+header {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    padding: 1rem 2rem;
+    border-bottom: 8px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--light);
+    font-weight: bold;
+}
+
+/* Mobile menu */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    display: flex;
+    flex-direction: row; /* text left, image right */
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+
+    background: linear-gradient(135deg, #1a1a1a, #5a0000, #ff4040);
+    color: white;
+
+    /* FADE-IN */
+    animation: fadeUp 1.2s ease-out forwards;
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+    animation: fadeUp 1.3s ease-out forwards;
+}
+
+.hero-content h1 {
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-content h4 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+    animation: fadeUp 1.5s ease-out forwards;
+}
+
+.hero-image {
+    position: static;
+    flex: 0 0 auto;
+    margin-left: 4rem; /* moves image right */
+    animation: fadeUp 1.6s ease-out forwards;
+}
+
+.hero-image img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+
+    border-radius: 14px;
+    border: 4px solid rgba(255, 255, 255, 0.85);
+
+    box-shadow:
+        0 0 25px rgba(255, 255, 255, 0.3),
+        0 0 50px rgba(255, 80, 30, 0.4);
+}
+
+.hero-image img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 100px;
+
+    border: 6px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 
+        0 0 40px rgba(255, 255, 255, 0.6),
+        0 0 80px rgba(255, 120, 80, 0.6);
+
+    animation: bounceImage 4s ease-in-out infinite;
+}
+/* ================= ABOUT ================= */
+.about {
+    padding: 10rem 2rem;
+    animation: fadeUp 1.2s ease-out forwards;
+    
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;     
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;                
+    flex-wrap: wrap;
+}
+
+.about img {
+    order: 1;                 
+    width: 500px;             
+    height: 500px;            
+    border-radius: 50%;       
+    object-fit: cover;        
+    border: 4px solid rgba(255, 255, 255, 0.85); 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+    margin-left: 150px;
+
+    box-shadow:
+        0 0 25px rgba(255, 255, 255, 0.3),
+        0 0 50px rgba(255, 80, 30, 0.4);
+
+    animation: bounceImage 4s ease-in-out infinite;
+}
+
+.about-text {
+    font-size: 20px;
+    order: 2;                 
+    max-width: 50%;
+    text-align: left;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+    padding: 4rem 2rem;
+    animation: fadeUp 1.2s ease-out forwards;
+}
+
+.skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--light);
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-item {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(6px);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.skill-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.skill-item h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--light);
+    margin: 0;
+}
+
+.skill-item p {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+/* ================= RESPONSIVE SKILLS ================= */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .skill-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-item h3 {
+        font-size: 1rem;
+    }
+
+    .skill-item p {
+        font-size: 0.8rem;
+    }
+}
+
+/* ================= PROJECTS ================= */
+.projects {
+    padding: 3rem 2rem;
+    animation: fadeUp 1.2s ease-out forwards;
+}
+
+.project-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(6px);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-sm {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--light);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+    padding: 3rem 2rem;
+    animation: fadeUp 1.2s ease-out forwards;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 25px; 
+    border: none;        
+    outline: none;       
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid var(--primary); 
+}
+
+.socials {
+    text-align: center;      
+    margin-top: 1rem;
+    display: flex;          
+    justify-content: center; 
+    gap: 1.5rem;            
+}
+
+.socials a {
+    color: #ffffff;           
+    text-decoration: none;    
+    font-weight: bold;        
+    font-size: 1.2rem;        
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #1a73e8;           
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    color: var(--light);
+}
+
+/* ================= RESPONSIVE MOBILE MENU ================= */
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.15);
+        padding: 1rem;
+        backdrop-filter: blur(6px);
+    }
+
+    .nav-links.mobile-open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes bounceImage {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); } /* from -20px → -6px */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
